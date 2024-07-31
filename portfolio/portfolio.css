@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background-image: url(bg_pic.jpg);
+    background-position: center;
+}
+#bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 20px;
+    box-shadow: 0 2px 5px rgb(30, 30, 98);
+}
+#bar h1{
+    box-shadow: 0 2px 6px black;
+    margin-left: 140px;
+    font-weight: bold;
+    font-size: 43px;
+    border: 2px solid cornsilk;
+    backdrop-filter: blur(20px);
+}
+#bar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    list-style: none;
+    margin-right: 50px;
+}
+#bar ul li a{
+    border-left: 2px solid brown;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+#bar ul li a:hover{
+    color: blue;
+}
+.sec1{
+    padding: 50px 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.sec1 img{
+    height: 100%;
+    left: 10%;
+    bottom: 0;
+    position: relative;
+    transform: translateX(-10%);
+    transition: bottom 1s ease-in;
+}
+.sec1:hover img{
+    bottom: 15px;
+}
+.sec1 .img1{
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    position: relative;
+    transform: translateX(-10%);
+    transition: left 1s;
+}
+.sec1:hover .img1{
+    left: 15px;
+}
+.sec1 .img1 h1 span{
+    color: rgb(11, 11, 67);
+    font-style: oblique;
+    overflow: hidden;
+    border-right: 0.15em solid black;
+    white-space: nowrap;
+    font-size: 3.5rem;
+    width: 0;
+    animation: 
+    blink-caret .75s step-end infinite;
+}
+@keyframes blink-caret{
+    from, to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: rgb(0, 0, 0);
+    }
+}
+#intro{
+    font-style: oblique;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.sec1 h1{
+    color: rgb(17, 6, 102);
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#sec2{
+    padding: 70px 50px;
+}
+#sec2 #sec22{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sec222{
+    padding: 50px 50px;
+    text-align: center;
+}
+#sec2 .heading h1{
+    font-weight: 1000;
+    font-style: oblique;
+}
+#sec2 .heading h2{
+    background-image: url(bg_pic.jpg);
+    background-position: center;
+    padding: 20px 60px;
+    color: rgb(18, 9, 34);
+    font-weight: 500;
+    font-style: oblique;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 2px 6px black;
+    backdrop-filter: blur(15px);
+}
+#sec2 .info p{
+    margin-left: 60px;
+    border-right: 2px solid orange;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(17, 17, 65);
+}
+#sec2 .awards h1{
+    font-weight: normal;
+    font-style: oblique;
+}
+#sec2 .awards p{
+    margin-left: 60px;
+    border-right: 2px solid orange;
+    font-weight: bold;
+    font-size: large;
+}
+
+#sec3{
+    padding: 100px 20px;
+    width: 96vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+#sec3 h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 0 2px 6px rgb(18, 18, 103);
+}
+#sec3 h1:hover{
+    transform: scale(1.1);
+}
+#sec31{
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+}
+#middle31 .lp{
+    background-color: rgb(17, 6, 69);
+    border: 1px solid;
+    color: rgb(255, 255, 255);
+    padding: 100px 50px;
+    box-shadow: 0 5px 15px black;
+}
+#middle31 .lp:hover{
+    transform: scale(1.1);
+}
+#middle32 h2{
+    font-style: oblique;
+}
+#middle32 h2:hover{
+    transform: scale(1.1);
+}
+#middle32 h2 span{
+    font-style: normal;
+    font-size: medium;
+}
+#middle32 .lp{
+    background-color: rgb(17, 6, 69);;
+    border: 1px solid;
+    color: rgb(255, 255, 255);
+    padding: 50px 50px;
+}
+#middle32 .lp:hover{
+    transform: scale(1.1);
+}
+#sec5{
+    flex-wrap: wrap;
+    flex-basis: 200%;
+    text-align: center;
+    padding: 300px 100px;
+}
